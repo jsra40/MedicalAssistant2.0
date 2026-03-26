@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedicalLitAssistant 2.0</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(0,0,0,0.2);
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .container {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+    .card h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    MedicalLitAssistant 2.0
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Welcome 👋</h2>
+      <p>
+        This chatbot is powered by an ontology-driven knowledge base. 
+        You can ask about symptoms, treatments, studies, patient groups, and research clusters 
+        for medical conditions like PCOS, diabetes, thyroid disorders, osteoporosis, and pituitary adenomas.
+      </p>
+      <p><strong>Try asking:</strong> "diabetes symptoms" or "pcos treatment"</p>
+    </div>
+  </div>
+
+  <!-- Dialogflow Messenger -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+  <df-messenger
+    intent="WELCOME"
+    chat-title="MedicalLitAssistant_2.0"
+    agent-id="d60d65b8-f270-4b90-a5de-8f2f5c7f71c0"
+    language-code="en"
+  ></df-messenger>
+
+</body>
+</html>
